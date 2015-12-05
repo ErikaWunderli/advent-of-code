@@ -78,6 +78,7 @@ function has_a_pair_with_one_char_between($string) {
 }
 
 
+// is it nice?
 function is_nice($string)
 {
 	
