@@ -24,28 +24,51 @@ How many strings are nice?
 */
 
 
+// check for 3+ vowels (rule 1)
+function has_three_vowels($string)
+{
+	return (preg_match_all('/[aeiou]/i', $string) >= 3);
+}
+
+
+// check for at least one letter twice in a row (rule 2)
+function has_repeated_char($string) {
+	
+	// loop through string
+	for($i = 1; $i < strlen($string); $i++)
+	{
+		
+		// check if char matches previous char
+		if(substr($string, $i, 1) == substr($string, $i-1, 1)) return true;
+
+	}
+	
+	// nada
+	return false;
+	
+}
+
+
+// check for 'ab', 'cd', 'pq' or 'xy' (rule 3)
+function has_patterns($string)
+{
+	return preg_match('/ab|cd|pq|xy/', $string);
+}
+
+
+// is it nice?
 function is_nice($string)
 {
 	
-	// not nice if < 3 vowels
-	if(preg_match_all('/[aeiou]/i', $string) < 3) return false;
-
-	// not nice if it doesn't have at least one letter twice in a row
-	$last_char = null;
-	$repeat_found = false;
-	for($i = 0; $i < strlen($string); $i++)
-	{
-		$char = substr($string, $i, 1);
-		if($char == $last_char) $repeat_found = true;
-		$last_char = $char;
-	}
+	// rule 1
+	if(!has_three_vowels($string)) return false;
 	
-	if(!$repeat_found) return false;
+	// rule 2
+	if(!has_repeated_char($string)) return false;
 	
-	// not nice if it contains any occurrences of 'ab', 'cd', 'pq' or 'xy'
-	if(preg_match('/ab|cd|pq|xy/', $string)) return false;
+	// rule 3
+	if(has_patterns($string)) return false;if(preg_match_all('/[aeiou]/i', $string) < 3) return false;
 	
-	// otherwise, it's nice!
 	return true;
 	
 }
