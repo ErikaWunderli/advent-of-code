@@ -30,7 +30,7 @@ For example, given the four strings above, the total number of characters of str
 $chars = 0;
 
 // loop through lines
-foreach(file('input/day-8.txt', FILE_IGNORE_NEW_LINES) as $line)
+foreach(file('input/day-08.txt', FILE_IGNORE_NEW_LINES) as $line)
 {
 
 	// eval to convert

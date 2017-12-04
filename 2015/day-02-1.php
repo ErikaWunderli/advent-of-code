@@ -19,7 +19,7 @@ All numbers in the elves' list are in feet. How many total square feet of wrappi
 
 
 // load data into array
-$data = file('input/day-2.txt');
+$data = file('input/day-02.txt');
 
 // keep track of area here
 $area = 0;

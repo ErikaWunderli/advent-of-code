@@ -20,7 +20,7 @@ For example:
 
 
 // load data into string
-$data = file_get_contents('input/day-3.txt');
+$data = file_get_contents('input/day-03.txt');
 
 // use an array as a counter of visits, using the x/y coordinates as the key and the number of visits as the value
 $visits = array();

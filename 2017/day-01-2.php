@@ -23,7 +23,7 @@ What is the solution to your new captcha?
 
 
 // load data into string
-$data = file_get_contents('input/day-1.txt');
+$data = file_get_contents('input/day-01.txt');
 $digits = strlen($data);
 $steps = $digits / 2;
 

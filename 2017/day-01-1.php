@@ -30,7 +30,7 @@ What is the solution to your captcha?
 
 
 // load data into string
-$data = file_get_contents('input/day-1.txt');
+$data = file_get_contents('input/day-01.txt');
 
 // counter
 $matches = 0;

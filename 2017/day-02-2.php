@@ -30,7 +30,7 @@ What is the sum of each row's result in your puzzle input?
 
 
 // load data
-$rows = file('input/day-2.txt');
+$rows = file('input/day-02.txt');
 
 // counter
 $checksum = 0;

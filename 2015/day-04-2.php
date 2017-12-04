@@ -10,7 +10,7 @@ Now find one that starts with six zeroes.
 
 
 // load key into string
-$key = file_get_contents('input/day-4.txt');
+$key = file_get_contents('input/day-04.txt');
 
 // counter
 $n = 1;

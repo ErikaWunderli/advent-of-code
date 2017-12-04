@@ -13,7 +13,7 @@ Now, take the signal you got on wire a, override wire b to that signal, and rese
 $wires = array();
 
 // loop through instructions
-foreach(file('input/day-7.txt', FILE_IGNORE_NEW_LINES) as $instruction)
+foreach(file('input/day-07.txt', FILE_IGNORE_NEW_LINES) as $instruction)
 {
 	
 	// split instruction

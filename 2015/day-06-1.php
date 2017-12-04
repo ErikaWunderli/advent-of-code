@@ -30,7 +30,7 @@ $lights = array_fill(0, 1000, array_fill(0, 1000, false));
 
 
 // load instructions into array
-$data = file('input/day-6.txt');
+$data = file('input/day-06.txt');
 
 // loop through instructions
 foreach($data as $key => $instruction)

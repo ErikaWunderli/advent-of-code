@@ -17,7 +17,7 @@ If your secret key is pqrstuv, the lowest number it combines with to make an MD5
 
 
 // load key into string
-$key = file_get_contents('input/day-4.txt');
+$key = file_get_contents('input/day-04.txt');
 
 // counter
 $n = 1;

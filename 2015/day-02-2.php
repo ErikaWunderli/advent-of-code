@@ -19,7 +19,7 @@ How many total feet of ribbon should they order?
 
 	
 // load data into array
-$data = file('input/day-2.txt');
+$data = file('input/day-02.txt');
 
 // keep track of length here
 $length = 0;

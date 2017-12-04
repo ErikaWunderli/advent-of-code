@@ -31,7 +31,7 @@ To what floor do the instructions take Santa?
 
 
 // load data into string
-$data = file_get_contents('input/day-1.txt');
+$data = file_get_contents('input/day-01.txt');
 
 // initially, floor is 0
 $floor = 0;

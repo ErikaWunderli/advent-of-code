@@ -41,7 +41,7 @@ function pc_permute($items, $perms = array())
 // create a lookup array of all distances between points,
 // in both directions
 $d = array();
-foreach(file('input/day-9.txt', FILE_IGNORE_NEW_LINES) as $line)
+foreach(file('input/day-09.txt', FILE_IGNORE_NEW_LINES) as $line)
 {
 	preg_match('/^(.+) to (.+) = (\d+)$/', $line, $x);
 	$d[$x[1]][$x[2]] = $x[3];

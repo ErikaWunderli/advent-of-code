@@ -22,7 +22,7 @@ Your task is to find the total number of characters to represent the newly encod
 $chars = 0;
 
 // loop through lines
-foreach(file('input/day-8.txt', FILE_IGNORE_NEW_LINES) as $line)
+foreach(file('input/day-08.txt', FILE_IGNORE_NEW_LINES) as $line)
 {
 
 	// add quotes and slashes (encode), add length to total

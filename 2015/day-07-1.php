@@ -48,7 +48,7 @@ In little Bobby's kit's instructions booklet (provided as your puzzle input), wh
 $wires = array();
 
 // loop through instructions
-foreach(file('input/day-7.txt', FILE_IGNORE_NEW_LINES) as $instruction)
+foreach(file('input/day-07.txt', FILE_IGNORE_NEW_LINES) as $instruction)
 {
 	
 	// split instruction
